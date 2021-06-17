@@ -77,6 +77,16 @@ if languadge == "rus" :
             out_text += rus_lower_alphabet[rez]
         else:
             out_text += i
+if languadge == "en" :
+    for i in text:
+        if i in eng_upper_alphabet:
+            rez = int(eng_upper_alphabet.find(i) + step_for_indx*(step%len(rus_upper_alphabet)))
+            out_text += eng_upper_alphabet[rez]
+        elif i in eng_lower_alphabet:
+            rez = int(eng_lower_alphabet.find(i) + step_for_indx*(step%len(rus_lower_alphabet)))
+            out_text += eng_lower_alphabet[rez]
+        else:
+            out_text += i
 print(out_text)
 
 

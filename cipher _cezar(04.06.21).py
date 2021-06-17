@@ -25,7 +25,7 @@ while True:
         counter += 1
     if counter == 5:
         print("Иди остынь и вводи верно!")
-        sys.exit()
+        exit(0)
 
 while True:
     print("Введите сдвиг: left - сдвиг влево, rigth - сдвиг вправо")
